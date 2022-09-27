@@ -48,15 +48,15 @@ async def on_message(message):
         return
       
     # react to message with message (not user-specific)
-    if 'trigger message here' in message.content:
-        await message.channel.send('reaction message here')
+    if 'TEST' in message.content:
+        await message.channel.send('TTTT')
         
     # react to user-specific message with message
-    if str(message.author) == '炎炎#4468':
+    if str(message.author) == '511896662407512065':
         await message.channel.send('your message here')
         
     # react to user-specific message with emoji reaction
-    if str(message.author) == '炎炎#4468':
+    if str(message.author) == '511896662407512065':
         await message.add_reaction('<:emoji_name:>')
         # if you want to use custom server-specific emoji, replace '<:emoji_name:>' with '<:emoji_name:emoji_id_number>'
     
