@@ -153,11 +153,10 @@ async def on_message(message):
     # react to user-specific message with emoji reaction
     if str(message.author) == '炎炎#4468':
       emoji = await ctx.guild.fetch_emoji(982031160517480540)
-        await ctx.message.add_reaction(<:emoji_name:396521773144866826>)
+        await ctx.message.add_reaction(emoji)
         # if you want to use custom server-specific emoji, replace '<:emoji_name:>' with '<:emoji_name:emoji_id_number>'
     
     
-   
     
     
     
