@@ -137,8 +137,8 @@ async def on_message(message):
                   
                   
                   
-emoji = ctx.bot.get_emoji(982031160517480540)
-
+emoji = await ctx.guild.fetch_emoji(982031160517480540)
+await ctx.message.add_reaction(emoji)
  
 @client.event
 async def on_message(message):
