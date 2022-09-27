@@ -33,18 +33,37 @@ client = commands.Bot(command_prefix = "!",intents=intent)
 
 
 
-@client.event
-async def on_message(message):
-    if str(message.author) == '炎炎#4468':
-        await message.add_reaction('<:fire72:>')
-
-
 
 # 起動時呼叫
 @client.event
 async def on_ready():
     print('成功登入')
 
+    
+    
+    
+    @client.event
+async def on_message(message):
+    message.content.lower()
+    if message.author==client.user:
+        return
+      
+    # react to message with message (not user-specific)
+    if 'trigger message here' in message.content:
+        await message.channel.send('reaction message here')
+        
+    # react to user-specific message with message
+    if str(message.author) == '炎炎#4468':
+        await message.channel.send('your message here')
+    
+    
+    
+    
+    
+    
+    
+    
+    
 #添加身分組
 @client.event
 async def on_raw_reaction_add(payload):
