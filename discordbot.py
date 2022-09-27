@@ -139,11 +139,11 @@ async def on_message(message):
                   
 
  
-@client.event
-async def on_message(message):
-    message.content.lower()
-    if message.author.bot:
-        return
+#@client.event
+#async def on_message(message):
+#    message.content.lower()
+#    if message.author.bot:
+#        return
       
     # react to message with message (not user-specific)
 #    if 'TESTTTT' in message.content:
@@ -159,7 +159,8 @@ async def on_message(message):
         # if you want to use custom server-specific emoji, replace '<:emoji_name:>' with '<:emoji_name:emoji_id_number>'
     if str(message.author) == '真宮悠楒#9869':
         await message.add_reaction('<:emoji_name:988774529461542912>')
-    
+    if str(message.author) == '炎炎#4468':
+        await message.add_reaction('<:emoji_name:988774529461542912>')
     
     
     
