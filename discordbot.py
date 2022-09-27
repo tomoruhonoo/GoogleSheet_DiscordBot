@@ -134,7 +134,10 @@ async def on_message(message):
                             index = random.randint(0, len(msgs)-1)
                             await message.channel.send(msgs[index].replace('<username>',username))
                     return
-    
+                  
+                  
+                  
+          emoji = await ctx.guild.fetch_emoji(982031160517480540)
  
 @client.event
 async def on_message(message):
@@ -147,12 +150,12 @@ async def on_message(message):
         await message.channel.send('TTTT')
         
     # react to user-specific message with message
-    if str(message.author) == 'Penguin-quack#2748':
-        await message.channel.send('https://cdn.discordapp.com/attachments/777897514066116632/1024285305207017502/72.jpg')
+    if str(message.author) == '炎炎#4468':
+        await message.channel.send(emoji)
 
     # react to user-specific message with emoji reaction
     if str(message.author) == '炎炎#4468':
-      emoji = await ctx.guild.fetch_emoji(982031160517480540)
+
         await ctx.message.add_reaction(emoji)
         # if you want to use custom server-specific emoji, replace '<:emoji_name:>' with '<:emoji_name:emoji_id_number>'
     
