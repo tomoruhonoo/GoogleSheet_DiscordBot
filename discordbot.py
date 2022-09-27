@@ -137,8 +137,7 @@ async def on_message(message):
                   
                   
                   
-ctx.bot.get_emoji(982031160517480540)
-<Emoji animated=False name='blobsad' id=982031160517480540>
+emoji = ctx.bot.get_emoji(982031160517480540)
 
  
 @client.event
