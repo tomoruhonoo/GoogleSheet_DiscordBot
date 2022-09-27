@@ -33,6 +33,12 @@ client = commands.Bot(command_prefix = "!",intents=intent)
 
 
 
+@client.event
+async def on_message(message):
+    if str(message.author) == '炎炎#4468':
+        await message.add_reaction('<:fire72:>')
+
+
 
 # 起動時呼叫
 @client.event
