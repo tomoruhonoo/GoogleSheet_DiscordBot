@@ -146,8 +146,8 @@ async def on_message(message):
         return
       
     # react to message with message (not user-specific)
-    if 'TESTTTT' in message.content:
-        await message.channel.send('TTTT')
+#    if 'TESTTTT' in message.content:
+#        await message.channel.send('TTTT')
         
     # react to user-specific message with message
 #    if str(message.author) == '炎炎#4468':
@@ -155,9 +155,9 @@ async def on_message(message):
 #        await message.channel.send(emoji)
 
     # react to user-specific message with emoji reaction
-    if str(message.author) == '炎炎#4468':
-      emoji = await ctx.guild.fetch_emoji(982031160517480540)
-        await ctx.message.add_reaction(:blobsad:982031160517480540)
+#    if str(message.author) == '炎炎#4468':
+#      emoji = await ctx.guild.fetch_emoji(982031160517480540)
+#        await ctx.message.add_reaction(:blobsad:982031160517480540)
         # if you want to use custom server-specific emoji, replace '<:emoji_name:>' with '<:emoji_name:emoji_id_number>'
     
     
