@@ -41,24 +41,7 @@ async def on_ready():
 
     
 
-@client.event
-async def on_message(message):
-    message.content.lower()
-    if message.author==client.user:
-        return
-      
-    # react to message with message (not user-specific)
-    if 'TEST' in message.content:
-        await message.channel.send('TTTT')
-        
-    # react to user-specific message with message
-    if str(message.author) == '511896662407512065':
-        await message.channel.send('your message here')
-        
-    # react to user-specific message with emoji reaction
-    if str(message.author) == '511896662407512065':
-        await message.add_reaction('<:emoji_name:>')
-        # if you want to use custom server-specific emoji, replace '<:emoji_name:>' with '<:emoji_name:emoji_id_number>'
+
     
     
     
@@ -151,6 +134,32 @@ async def on_message(message):
                             index = random.randint(0, len(msgs)-1)
                             await message.channel.send(msgs[index].replace('<username>',username))
                     return
+    
+@client.event
+async def on_message(message):
+    message.content.lower()
+    if message.author.bot:
+        return
+      
+    # react to message with message (not user-specific)
+    if 'TEST' in message.content:
+        await message.channel.send('TTTT')
+        
+    # react to user-specific message with message
+    if str(message.author) == '511896662407512065':
+        await message.channel.send('your message here')
+        
+    # react to user-specific message with emoji reaction
+    if str(message.author) == '511896662407512065':
+        await message.add_reaction('<:emoji_name:>')
+        # if you want to use custom server-specific emoji, replace '<:emoji_name:>' with '<:emoji_name:emoji_id_number>'
+    
+    
+    
+    
+    
+    
+    
     
 # Bot起動
 client.run(TOKEN)
