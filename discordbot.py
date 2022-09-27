@@ -136,9 +136,7 @@ async def on_message(message):
                     return
     
     
-    
-emoji = ["🔥","💥","😠", "👿", "😲", "🥑", "🍺", "🎂", "🖤", "💙", "💔", "🦋", "🤙", "📷", "✔️", "🏙️", "👏", "🤡", "🤠", "🌙", "🤞", "👑", "😢", "➗", "⬇️", "🤤", "❗", "👀", "😘", "😱", "🤭", "😷", "🙄", "😂", "♀️", "🔥", "🇧🇷", "🇮🇹", "🇪🇸", "🇺🇸", "🙏", "🍀", "☹️", "👻", "😀", "💲", "🥵", "🏠", "🤗", "💯", "♾️", "✝️", "😭", "♂️", "🤦‍♂️", "⚕️", "🦠", "🖕", "🎶", "👌", "🎉", "🥳", "🍑", "🎭", "💩", "🥺", "❓", "🌈", "🏳️‍🌈", "🙌", "🔴", "❤️", "➡️", "🤖", "🤣", "🌹", "📍", "😥", "🛡️", "🤘", "☺️", "😍", "🥰", "😈", "😊", "😎", "⚽", "✨", "⭐", "☀️", "🧸", "🤔", "👍", "💕", "☂️", "⚠️", "🤍", "😉", "🤦‍♀️", "🤷‍♀️", "🥴", "🥱"]
-
+  
     
 @client.event
 async def on_message(message):
@@ -152,10 +150,10 @@ async def on_message(message):
         
     # react to user-specific message with message
     if str(message.author) == '炎炎#4468':
-        await message.channel.send('your message here')
+        await message.channel.send('https://cdn.discordapp.com/attachments/777897514066116632/1024285305207017502/72.jpg')
 
     # react to user-specific message with emoji reaction
-    if str(message.author) == '炎炎#4468':
+    if str(message.author) == 'TTTTTTTT':
         await message.add_reaction(emoji)
         # if you want to use custom server-specific emoji, replace '<:emoji_name:>' with '<:emoji_name:emoji_id_number>'
     
