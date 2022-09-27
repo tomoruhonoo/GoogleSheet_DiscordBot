@@ -136,7 +136,7 @@ async def on_message(message):
                     return
     
     
-  emojis = [":160:"]
+  emojis = ["🔥"]
     
 @client.event
 async def on_message(message):
@@ -156,6 +156,7 @@ async def on_message(message):
     if str(message.author) == '炎炎#4468':
       emoji= emojis
         await message.add_reaction(emoji)
+        ff.append(emoji)
         # if you want to use custom server-specific emoji, replace '<:emoji_name:>' with '<:emoji_name:emoji_id_number>'
     
     
