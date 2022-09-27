@@ -139,11 +139,11 @@ async def on_message(message):
                   
 
  
-@client.event
-async def on_message(message):
-    message.content.lower()
-    if message.author.bot:
-        return
+#@client.event
+#async def on_message(message):
+#    message.content.lower()
+#    if message.author.bot:
+#        return
       
     # react to message with message (not user-specific)
 #    if 'TESTTTT' in message.content:
