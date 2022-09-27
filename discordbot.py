@@ -40,14 +40,7 @@ async def on_ready():
     print('成功登入')
 
     
-    
-    
-    @client.event
-async def on_message(message):
-    message.content.lower()
-    if message.author==client.user:
-        return
-      
+
     # react to message with message (not user-specific)
     if 'trigger message here' in message.content:
         await message.channel.send('reaction message here')
