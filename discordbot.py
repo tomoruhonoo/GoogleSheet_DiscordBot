@@ -145,11 +145,11 @@ async def on_message(message):
         return
       
     # react to message with message (not user-specific)
-    if 'TEST' in message.content:
+    if 'TESTTTT' in message.content:
         await message.channel.send('TTTT')
         
     # react to user-specific message with message
-    if str(message.author) == '炎炎#4468':
+    if str(message.author) == 'Penguin-quack#2748':
         await message.channel.send('https://cdn.discordapp.com/attachments/777897514066116632/1024285305207017502/72.jpg')
 
     # react to user-specific message with emoji reaction
