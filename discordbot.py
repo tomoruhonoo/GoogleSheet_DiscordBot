@@ -153,7 +153,7 @@ async def on_message(message):
     # react to user-specific message with emoji reaction
     if str(message.author) == '炎炎#4468':
       emoji= emojis
-        await message.add_reaction(":160:")
+        await message.add_reaction('<:emoji_name:982031160517480540>')
         # if you want to use custom server-specific emoji, replace '<:emoji_name:>' with '<:emoji_name:emoji_id_number>'
     
     
