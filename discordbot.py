@@ -92,7 +92,7 @@ async def on_message(message):
         return
     else:
         for row in values:
-            if (message.channel.name == row[0] or row[0] == ''):
+            if (message.guild.name == row[0] or row[0] == ''):
                 keywords = row[1].split()
                 check = True
                 for keyword in keywords:
