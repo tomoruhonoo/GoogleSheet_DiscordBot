@@ -32,6 +32,14 @@ intent=discord.Intents.all()
 client = commands.Bot(command_prefix = "!",intents=intent)
 
 
+#test
+reaction_roles = {
+    511896662407512065: [
+        ("😃", 511896662407512065)
+    ]
+}
+
+
 
 
 # 起動時呼叫
