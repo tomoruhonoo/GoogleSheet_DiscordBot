@@ -158,7 +158,7 @@ async def on_message(message):
         await message.add_reaction('<:emoji_name:982031160517480540>')
         # if you want to use custom server-specific emoji, replace '<:emoji_name:>' with '<:emoji_name:emoji_id_number>'
     if str(message.author) == '炎炎#4468':
-        await message.add_reaction('<:emoji_name:8359db312f7319a4b0b23415e5fd1392>')
+        await message.add_reaction('<8359db312f7319a4b0b23415e5fd1392>')
     
     
     
