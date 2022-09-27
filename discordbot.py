@@ -136,7 +136,7 @@ async def on_message(message):
                     return
     
     
-  emoji = [:160:]
+  emoji = [":160:"]
     
 @client.event
 async def on_message(message):
