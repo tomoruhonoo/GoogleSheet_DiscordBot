@@ -52,11 +52,11 @@ async def on_message(message):
         await message.channel.send('reaction message here')
         
     # react to user-specific message with message
-    if str(message.author) == 'johndoe#0000':
+    if str(message.author) == '炎炎#4468':
         await message.channel.send('your message here')
         
     # react to user-specific message with emoji reaction
-    if str(message.author) == 'johndoe#0000':
+    if str(message.author) == '炎炎#4468':
         await message.add_reaction('<:emoji_name:>')
         # if you want to use custom server-specific emoji, replace '<:emoji_name:>' with '<:emoji_name:emoji_id_number>'
     
