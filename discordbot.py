@@ -139,11 +139,11 @@ async def on_message(message):
                   
 
  
-#@client.event
-#async def on_message(message):
-#    message.content.lower()
-#    if message.author.bot:
-#        return
+@client.event
+async def on_message(message):
+    message.content.lower()
+    if message.author.bot:
+        return
       
     # react to message with message (not user-specific)
 #    if 'TESTTTT' in message.content:
@@ -151,13 +151,11 @@ async def on_message(message):
         
     # react to user-specific message with message
 #    if str(message.author) == '炎炎#4468':
-#      emoji = await ctx.guild.fetch_emoji(982031160517480540)
 #        await message.channel.send(emoji)
 
     # react to user-specific message with emoji reaction
-#    if str(message.author) == '炎炎#4468':
-#      emoji = await ctx.guild.fetch_emoji(982031160517480540)
-#        await ctx.message.add_reaction(:blobsad:982031160517480540)
+    if str(message.author) == '炎炎#4468':
+        await ctx.message.add_reaction('<:emoji_name:emoji_id_982031160517480540>')
         # if you want to use custom server-specific emoji, replace '<:emoji_name:>' with '<:emoji_name:emoji_id_number>'
     
     
