@@ -113,9 +113,6 @@ async def on_message(message):
                             await message.delete()
                         else:
                             if '<reply>' in row[2]:
-                              msgs = row[3].split('|')
-                                if len(msgs) != 0:
-                                    index = random.randint(0, len(msgs)-1)
                                 await message.reply(row[3].replace('<username>',username))
                             if '<replyrandom>' in row[2]:
                                 msgs = row[3].split('|')
