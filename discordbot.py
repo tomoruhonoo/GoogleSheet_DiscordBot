@@ -140,7 +140,7 @@ async def on_message(message):
                   
     # react to message with message (not user-specific)
     if '123' in message.content:
-        await message.channel.send('reaction message here')
+        await message.add_reaction('<:emoji_name:982031160517480540>')
                   
 
                   
