@@ -136,8 +136,8 @@ async def on_message(message):
                     return
                   
 
+
 if '123' in message.content:
-        await
 await message.add_reaction('<:rang:>')
                   
     #用表情符號對特定用戶發送反應
