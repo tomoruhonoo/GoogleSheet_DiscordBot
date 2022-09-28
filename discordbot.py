@@ -145,16 +145,10 @@ async def on_message(message):
         await message.add_reaction('😡')
 
 
- #    if '<@990641822722318376>': in message
- #        await message.add_reaction('<:emoji_name:982031160517480540>')
- # == '<@990641822722318376>':
-        
-    if str(message.author.id) == '511896662407512065':
+    if str(message.author.id) == '557564258821472267':
         await message.add_reaction('<:emoji_name:982031160517480540>')
 
 
-
-                  
 #    #用表情符號對特定用戶發送反應
 #    if str(message.author) == 'Penguin-quack#2748':
 #        await message.add_reaction('<:emoji_name:982031160517480540>')
