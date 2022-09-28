@@ -148,15 +148,15 @@ async def on_message(message):
         
         
         
-    if str(client.role) == '<@990641822722318376>':
+    if str( member_roles) == '<@990641822722318376>':
         await message.add_reaction('<:emoji_name:982031160517480540>')
 
 
 
                   
-    #用表情符號對特定用戶發送反應
-    if str(message.author) == 'Penguin-quack#2748':
-        await message.add_reaction('<:emoji_name:982031160517480540>')
+#    #用表情符號對特定用戶發送反應
+#    if str(message.author) == 'Penguin-quack#2748':
+#        await message.add_reaction('<:emoji_name:982031160517480540>')
 #    if str(message.author) == '真宮悠楒#9869':
 #        await message.add_reaction('<:emoji_name:988774529461542912>')
 #        # if you want to use custom server-specific emoji, replace '<:emoji_name:>' with '<:emoji_name:emoji_id_number>'
