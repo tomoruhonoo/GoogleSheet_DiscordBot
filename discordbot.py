@@ -149,7 +149,7 @@ async def on_message(message):
  #        await message.add_reaction('<:emoji_name:982031160517480540>')
  # == '<@990641822722318376>':
         
-    if str(message.企鵝)
+    if str(message.author) == None:
         await message.add_reaction('<:emoji_name:982031160517480540>')
 
 
