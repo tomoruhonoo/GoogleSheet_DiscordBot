@@ -148,7 +148,10 @@ async def on_message(message):
         
         
         
-        
+    if str(message.role) == '990641822722318376':
+        await message.add_reaction('<:emoji_name:982031160517480540>')
+
+
 
                   
     #用表情符號對特定用戶發送反應
