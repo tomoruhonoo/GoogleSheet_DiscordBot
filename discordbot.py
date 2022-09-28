@@ -141,7 +141,8 @@ async def on_message(message):
     # react to message with message (not user-specific)
     if ':884411741239390218:' in message.content:
         await message.add_reaction('😡')
-                  
+    if ':rage:' in message.content:
+        await message.add_reaction('😡')
 
                   
     #用表情符號對特定用戶發送反應
