@@ -148,7 +148,7 @@ async def on_message(message):
         
         
         
-    if str(guild.roles) == '990641822722318376':
+    if str(guild.roles) == roles.name('990641822722318376'):
         await message.add_reaction('<:emoji_name:982031160517480540>')
 
 
