@@ -139,7 +139,7 @@ async def on_message(message):
                   
                   
     # react to message with message (not user-specific)
-    if '123' in message.content:
+    if ':884411741239390218:' in message.content:
         await message.add_reaction('😡')
                   
 
