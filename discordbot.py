@@ -143,6 +143,12 @@ async def on_message(message):
         await message.add_reaction('😡')
     if '😡' in message.content:
         await message.add_reaction('😡')
+    if ':u1:' in message.content:
+        await message.add_reaction('😡')
+        
+        
+        
+        
 
                   
     #用表情符號對特定用戶發送反應
