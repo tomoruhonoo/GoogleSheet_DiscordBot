@@ -138,7 +138,8 @@ async def on_message(message):
 
 
 if '123' in message.content:
-await message.add_reaction('<:rang:>')
+await message.add_reaction('<😡>')
+                         
                   
     #用表情符號對特定用戶發送反應
     if str(message.author) == 'Penguin-quack#2748':
