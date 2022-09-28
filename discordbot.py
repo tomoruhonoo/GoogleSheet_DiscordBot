@@ -135,11 +135,14 @@ async def on_message(message):
                             await message.channel.send(msgs[index].replace('<username>',username))
                     return
                   
+                  
+                  
+                  
+    # react to message with message (not user-specific)
+    if '123' in message.content:
+        await message.channel.send('reaction message here')
+                  
 
-
-if '123' in message.content:
-await message.add_reaction('😡')
-                         
                   
     #用表情符號對特定用戶發送反應
     if str(message.author) == 'Penguin-quack#2748':
