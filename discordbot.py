@@ -135,32 +135,14 @@ async def on_message(message):
                             await message.channel.send(msgs[index].replace('<username>',username))
                     return
                   
-                  
-                  
 
- 
-#@client.event
-#async def on_message(message):
-#    message.content.lower()
-#    if message.author.bot:
-#        return
-      
-    # react to message with message (not user-specific)
-#    if 'TESTTTT' in message.content:
-#        await message.channel.send('TTTT')
-        
-    # react to user-specific message with message
-#    if str(message.author) == '炎炎#4468':
-#        await message.channel.send(emoji)
-
-    # react to user-specific message with emoji reaction
+                  
+    #用表情符號對特定用戶發送反應
     if str(message.author) == 'Penguin-quack#2748':
         await message.add_reaction('<:emoji_name:982031160517480540>')
-        # if you want to use custom server-specific emoji, replace '<:emoji_name:>' with '<:emoji_name:emoji_id_number>'
     if str(message.author) == '真宮悠楒#9869':
         await message.add_reaction('<:emoji_name:988774529461542912>')
-    if str(message.author) == '炎炎#4468':
-        await message.add_reaction('<:emoji_name:988774529461542912>')
+        # if you want to use custom server-specific emoji, replace '<:emoji_name:>' with '<:emoji_name:emoji_id_number>'
     
     
     
