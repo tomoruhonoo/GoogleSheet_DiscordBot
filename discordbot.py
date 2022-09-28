@@ -138,7 +138,7 @@ async def on_message(message):
 
 
 if '123' in message.content:
-await message.add_reaction('<😡>')
+await message.add_reaction('<\U0001f621>')
                          
                   
     #用表情符號對特定用戶發送反應
