@@ -148,7 +148,7 @@ async def on_message(message):
         
         
         
-    if str(role) == '<@990641822722318376>':
+    if str(message.author.role) == '<@990641822722318376>':
         await message.add_reaction('<:emoji_name:982031160517480540>')
 
 
