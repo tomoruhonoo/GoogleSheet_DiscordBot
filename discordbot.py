@@ -145,8 +145,8 @@ async def on_message(message):
         await message.add_reaction('😡')
 
 
-    if str(message.author.id) == '557564258821472267':
-        await message.add_reaction('<:emoji_name:982031160517480540>')
+    if str(message.author.id) == '515840227177398272':
+        await message.add_reaction('<:emoji_name:866699230320394260>')
 
 
 #    #用表情符號對特定用戶發送反應
