@@ -152,8 +152,8 @@ async def on_message(message):
 #    #用表情符號對特定用戶發送反應
 #    if str(message.author) == 'Penguin-quack#2748':
 #        await message.add_reaction('<:emoji_name:982031160517480540>')
-#    if str(message.author.id) == '793810244097540107':
-#        await message.add_reaction('💩')
+    if str(message.author.id) == '411581166995505163':
+        await message.add_reaction('<:emoji_name:978502261640687636>')
 #        # if you want to use custom server-specific emoji, replace '<:emoji_name:>' with '<:emoji_name:emoji_id_number>'
     
     
